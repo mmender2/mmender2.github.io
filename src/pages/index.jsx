@@ -22,7 +22,7 @@ const Home = () => {
       <Info {...homeObjOne}/>
       <Info {...homeObjTwo}/>
       <Services />
-      <Info {...homeObjThree}/>
+      {/* <Info {...homeObjThree}/> */}
       <Footer />
     </>
   )
