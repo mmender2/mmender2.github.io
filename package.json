@@ -30,8 +30,7 @@
     "deploy:filebase": "ipfs-scripts filebase",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "yarn build && npx thirdweb@latest upload build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

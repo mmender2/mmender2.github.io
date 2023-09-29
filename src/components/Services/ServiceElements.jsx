@@ -16,24 +16,32 @@ export const ServicesContainer = styled.div`
     height: 1300px;
   }
  `
-export const ServicesWrapper = styled.div`
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    grid-gap: 16px;
-    padding: 0 50px;
+ export const ServicesWrapper = styled.div`
+ max-width: 1000px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ align-items: center;
+ grid-gap: 16px;
+ padding: 0 50px;
 
-    @media screen and (max-width: 1000px) {
-      grid-template-columns: 1fr 1fr;
-  }
+ @media screen and (max-width: 1000px) {
+   grid-template-columns: 1fr 1fr;
+ }
 
-    @media screen and (max-width: 786px) {
-      grid-template-columns: 1fr;
-      padding: 0 20px;
-  }
-`
+ @media screen and (max-width: 786px) {
+   grid-template-columns: 1fr;
+   padding: 0 20px;
+ }
+
+ /* Specifically target the last ServicesCard */
+ > :last-child {
+   grid-column: 1 / -1;  /* This makes the last card span the entire width */
+   justify-self: center; /* This centers the card */
+ }
+`;
+
+
 export const ServicesCard = styled.div`
   background: #fff;
   display: flex;
@@ -76,5 +84,7 @@ export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
 `
+
+
 
 

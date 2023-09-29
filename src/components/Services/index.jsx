@@ -2,6 +2,7 @@ import React from 'react'
 import Icon1 from '../../images/svg-1.svg'
 import Icon2 from '../../images/svg-2.svg'
 import Icon3 from '../../images/svg-3.svg'
+import Icon4 from '../../images/bc.png'
 import {ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP} from './ServiceElements'
 
 const Services = () => {
@@ -23,6 +24,11 @@ const Services = () => {
           <ServicesIcon src={Icon3}/>
           <ServicesH2>Business Intelligence</ServicesH2>
           <ServicesP>Targeted marketing.    Consumer reccomendations.  Automated customer service.  Supply chain optimization and quality control.</ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon4}/>
+          <ServicesH2>Blockchain</ServicesH2>
+          <ServicesP>Bringing the power of Ai to the realm of Crypto and FinTech.</ServicesP>
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
